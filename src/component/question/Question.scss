@@ -1,0 +1,60 @@
+.ques-card{
+    // position: relative;
+    display: flex;
+
+    &__left{
+        flex-grow: 1;
+        &__head{
+            background-color: #457B9D;
+            color: white;
+            padding: 10px;
+            .number{
+                font-weight: bold;
+            }
+        }
+        &__body{
+            background-color: #A8DADC;
+            div{
+                padding: 10px;
+                border-bottom: 2px solid #457B9D;
+            }
+        }
+    }
+
+    &__right{
+        border-left: 3px solid #457B9D;
+        display: flex;
+        flex-direction: column;
+
+        &__head{
+            background-color: #457B9D;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid white;
+
+            button{
+                flex-grow: 1;
+                width: 50%;
+                padding: 10px;
+                
+                color: white;
+                font-weight: bold;
+                border: none;
+                outline: none;
+
+                &:first-of-type{
+                    background-color: #8fc035;
+                }
+                &:last-of-type{
+                    background-color: #ff512a;
+                }
+            }
+        }
+        &__body{
+            padding: 1em;
+            background-color: #A8DADC;
+            flex-grow: 1;
+        }
+    }
+}
